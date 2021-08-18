@@ -1,20 +1,20 @@
 {
   "name": "botbuilder",
-  "author": "Microsoft Corp.",
-  "description": "Bot Builder is a dialog system for building rich bots on virtually any platform.",
-  "version": "3.30.0",
+  "author": "Feedyou",
+  "description": "Fork of `https://github.com/microsoft/BotBuilder-V3`",
+  "version": "0.0.1",
   "license": "MIT",
   "keywords": [
     "botbuilder",
     "bots",
     "chatbots"
   ],
-  "bugs": {
-    "url": "https://github.com/Microsoft/BotBuilder/issues"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/BotBuilder.git"
+    "url": "https://github.com/feedyou-ai/botbuilder"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/feedyou-ai"
   },
   "main": "./lib/botbuilder.js",
   "typings": "./lib/botbuilder.d.ts",
@@ -45,8 +45,6 @@
     "sinon": "^7.3.2"
   },
   "scripts": {
-    "preinstall": "cd ./skills-validator && npm pack",
-    "postinstall": "npm install ./skills-validator/skills-validator-1.0.0.tgz",
     "test": "mocha tests/*.js"
   }
 }
